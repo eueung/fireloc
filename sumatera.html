@@ -88,18 +88,18 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-        <p><small class="text-muted">Last updated: <strong>07-10-2019 05:30</strong></small></p>
+        <p><small class="text-muted">Last updated: <strong>07-10-2019 17:24</strong></small></p>
 
         <h4 class="jumbotron-heading">Data VIIRS (NASA FIRMS)</h4>
         <h2><strong>Titik Api @Sumatera</strong></h2>
 
-        <h3 class="jumbotron-heading"><span class="bg-warning">1120</span> (24H) | <span class="bg-warning">1580</span> (48H) | <span class="bg-warning">3608</span> (7D)</h3>
+        <h3 class="jumbotron-heading"><span class="bg-warning">340</span> (24H) | <span class="bg-warning">1120</span> (48H) | <span class="bg-warning">3264</span> (7D)</h3>
       <p class="lead text-muted">
           Olah <strong>Data</strong>  dan <strong>Visualisasi</strong> Sebaran Titik Api di Indonesia. </p>
       <p><small class="text-muted">
-          Acq. Date: 05-10-2019 12:54 -- 07-10-2019 01:18 WIB (<strong>24H</strong>) |
-          04-10-2019 13:12 -- 07-10-2019 01:18 WIB (<strong>48H</strong>) |
-          29-09-2019 13:06 -- 07-10-2019 01:18 WIB (<strong>7D</strong>)
+          Acq. Date: 06-10-2019 12:36 -- 07-10-2019 01:18 WIB (<strong>24H</strong>) |
+          05-10-2019 12:54 -- 07-10-2019 01:18 WIB (<strong>48H</strong>) |
+          30-09-2019 12:48 -- 07-10-2019 01:18 WIB (<strong>7D</strong>)
       </small></p>
       <p>
         <a href="index.html" class="btn btn-outline-primary btn-sm">Home</a>
@@ -121,13 +121,51 @@
     <div class="row">
 
 <div class="col-md-12 text-center">
-  <img src="images/sumatera_24h_07-10-19_05-30.png" class="img-fluid" alt="...">
+  <img src="images/sumatera_24h_07-10-19_17-24.png" class="img-fluid" alt="...">
 </div>
 
 
 <div class="col-md-6">   
 <div class="card mb-4 shadow-sm">
   <div class="card-header">Data 24H</div>
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Kategori</th>
+          <th scope="col">#Titik</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Confidence High</th>
+          <td>21</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Nominal</th>
+          <td>292</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Low</th>
+          <td>27</td>
+        </tr>
+        <tr class="table-primary">
+          <th scope="row">Total</th>
+          <td>340</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence High or FRP&gt;10</th>
+          <td>122</td>
+        </tr>        
+    </tbody>
+    </table>
+  </div>
+</div>        
+</div>
+
+<div class="col-md-6">   
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 48H</div>
   <div class="card-body">
     <table class="table table-sm table-striped table-hover">
       <thead>
@@ -165,36 +203,123 @@
 
 <div class="col-md-6">   
 <div class="card mb-4 shadow-sm">
-  <div class="card-header">Data 48H</div>
+  <div class="card-header">Data 24H</div>
   <div class="card-body">
     <table class="table table-sm table-striped table-hover">
       <thead>
         <tr>
-          <th scope="col">Kategori</th>
-          <th scope="col">#Titik</th>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">Total</th>
+          <th scope="col">H</th>
+          <th scope="col">N</th>
+          <th scope="col">L</th>
+          <th scope="col">HFRP10</th>
         </tr>
       </thead>
       <tbody>
+        
         <tr>
-          <th scope="row">Confidence High</th>
-          <td>72</td>
-        </tr>
+              <th scope="row">1</th>
+              <td>Sumatera Selatan</td>
+              <td>138</td>
+              <td>10</td>
+              <td>117</td>
+              <td>11</td>
+              <td>51</td>
+            </tr>
+            
         <tr>
-          <th scope="row">Confidence Nominal</th>
-          <td>1305</td>
-        </tr>
+              <th scope="row">2</th>
+              <td>Lampung</td>
+              <td>120</td>
+              <td>10</td>
+              <td>105</td>
+              <td>5</td>
+              <td>48</td>
+            </tr>
+            
         <tr>
-          <th scope="row">Confidence Low</th>
-          <td>203</td>
-        </tr>
-        <tr class="table-primary">
-          <th scope="row">Total</th>
-          <td>1580</td>
-        </tr>
+              <th scope="row">3</th>
+              <td>Jambi</td>
+              <td>52</td>
+              <td>0</td>
+              <td>44</td>
+              <td>8</td>
+              <td>19</td>
+            </tr>
+            
         <tr>
-          <th scope="row">Confidence High or FRP&gt;10</th>
-          <td>471</td>
-        </tr>        
+              <th scope="row">4</th>
+              <td>Sumatera Barat</td>
+              <td>18</td>
+              <td>1</td>
+              <td>15</td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">5</th>
+              <td>Riau</td>
+              <td>8</td>
+              <td>0</td>
+              <td>7</td>
+              <td>1</td>
+              <td>3</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">6</th>
+              <td>Kepulauan Bangka Belitung</td>
+              <td>3</td>
+              <td>0</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">7</th>
+              <td>Bengkulu</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">8</th>
+              <td>Aceh</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">9</th>
+              <td>Kepulauan Riau</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">10</th>
+              <td>Sumatera Utara</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        
     </tbody>
     </table>
   </div>
@@ -203,7 +328,7 @@
 
 <div class="col-md-6">   
 <div class="card mb-4 shadow-sm">
-  <div class="card-header">Data 24H</div>
+  <div class="card-header">Data 48H</div>
   <div class="card-body">
     <table class="table table-sm table-striped table-hover">
       <thead>
@@ -326,156 +451,31 @@
 </div>        
 </div>
 
-<div class="col-md-6">   
-<div class="card mb-4 shadow-sm">
-  <div class="card-header">Data 48H</div>
-  <div class="card-body">
-    <table class="table table-sm table-striped table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Provinsi</th>
-          <th scope="col">Total</th>
-          <th scope="col">H</th>
-          <th scope="col">N</th>
-          <th scope="col">L</th>
-          <th scope="col">HFRP10</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-        <tr>
-              <th scope="row">1</th>
-              <td>Sumatera Selatan</td>
-              <td>749</td>
-              <td>35</td>
-              <td>548</td>
-              <td>166</td>
-              <td>238</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">2</th>
-              <td>Jambi</td>
-              <td>447</td>
-              <td>22</td>
-              <td>410</td>
-              <td>15</td>
-              <td>131</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">3</th>
-              <td>Lampung</td>
-              <td>244</td>
-              <td>11</td>
-              <td>217</td>
-              <td>16</td>
-              <td>80</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">4</th>
-              <td>Riau</td>
-              <td>47</td>
-              <td>1</td>
-              <td>45</td>
-              <td>1</td>
-              <td>5</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">5</th>
-              <td>Kepulauan Bangka Belitung</td>
-              <td>42</td>
-              <td>0</td>
-              <td>39</td>
-              <td>3</td>
-              <td>7</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">6</th>
-              <td>Sumatera Barat</td>
-              <td>28</td>
-              <td>3</td>
-              <td>23</td>
-              <td>2</td>
-              <td>5</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">7</th>
-              <td>Bengkulu</td>
-              <td>19</td>
-              <td>0</td>
-              <td>19</td>
-              <td>0</td>
-              <td>5</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">8</th>
-              <td>Aceh</td>
-              <td>2</td>
-              <td>0</td>
-              <td>2</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">9</th>
-              <td>Sumatera Utara</td>
-              <td>2</td>
-              <td>0</td>
-              <td>2</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            
-        <tr>
-              <th scope="row">10</th>
-              <td>Kepulauan Riau</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            
-        
-    </tbody>
-    </table>
-  </div>
-</div>        
-</div>
-
 <div class="col-md-6">           
 <div class="card mb-4 shadow-sm">
   <div class="card-header">Data 24H</div>
-  <img src="images/sumatera_selatan_24h_07-10-19_05-30.jpg" class="card-img-top" alt="...">
+  <img src="images/sumatera_selatan_24h_07-10-19_17-24.jpg" class="card-img-top" alt="...">
 </div>
 </div>       
 
 <div class="col-md-6">           
 <div class="card mb-4 shadow-sm">
   <div class="card-header">Data 48H</div>
-  <img src="images/sumatera_selatan_48h_07-10-19_05-30.jpg" class="card-img-top" alt="...">
+  <img src="images/sumatera_selatan_48h_07-10-19_17-24.jpg" class="card-img-top" alt="...">
 </div>
 </div>       
 
 <div class="col-md-6">           
 <div class="card mb-4 shadow-sm">
   <div class="card-header">Data 24H</div>
-  <img src="images/sumatera_prov_24h_07-10-19_05-30.svg" class="card-img-top" alt="...">
+  <img src="images/sumatera_prov_24h_07-10-19_17-24.svg" class="card-img-top" alt="...">
 </div>
 </div>        
 
 <div class="col-md-6">           
 <div class="card mb-4 shadow-sm">
   <div class="card-header">Data 48H</div>
-  <img src="images/sumatera_prov_48h_07-10-19_05-30.svg" class="card-img-top" alt="...">
+  <img src="images/sumatera_prov_48h_07-10-19_17-24.svg" class="card-img-top" alt="...">
 </div>
 </div>        
 
