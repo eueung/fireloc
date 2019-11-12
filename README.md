@@ -11,9 +11,9 @@ Raw data akan diperbaharui secara berkala, sesuai dengan data yg disediakan oleh
 - [Seed Notebook 24H](https://colab.research.google.com/github/eueung/fireloc/blob/master/fireloc.ipynb)
 
 
-## Update (12-11-2019 05:08)
+## Update (13-11-2019 04:46)
 
-![](images/all_24h_12-11-19_05-08.png)
+![](images/all_24h_13-11-19_04-46.png)
 
 
 ## Web Render
