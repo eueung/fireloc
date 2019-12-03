@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147208165-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147208165-1');
+  </script>
+  <title>Data Titik Api Wilayah Indonesia (VIIRS)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <style>
+    .bd-placeholder-img {
+        font-size: 1.925rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+    }
+      
+    .jumbotron {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 0;
+      background-color: #fff;
+    }
+    @media (min-width: 768px) {
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .jumbotron-heading {
+      font-weight: 300;
+    }
+
+    .jumbotron .container {
+      max-width: 40rem;
+    }
+
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    footer p {
+      margin-bottom: .25rem;
+    }      
+    .btn-sm { margin-bottom: .25rem !important; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar navbar-light bg-light shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <i class="fa fa-cog fa-spin fa-fw"></i>
+        <strong>Active Fire @ID</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+    
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+        <p><small class="text-muted">Last updated: <strong>04-12-2019 04:42</strong></small></p>
+
+        <h4 class="jumbotron-heading">Data VIIRS (NASA FIRMS)</h4>
+        <h2><strong>Titik Api @Indonesia</strong></h2>
+
+        <h3 class="jumbotron-heading"><span class="bg-warning">480</span> (24H) | <span class="bg-warning">846</span> (48H) | <span class="bg-warning">6197</span> (7D)</h3>
+      <p class="lead text-muted">
+          Olah <strong>Data</strong>  dan <strong>Visualisasi</strong> Sebaran Titik Api di Indonesia. </p>
+      <p><small class="text-muted">
+          Acq. Date: 02-12-2019 11:24 -- 03-12-2019 23:54 WIB (<strong>24H</strong>) |
+          01-12-2019 11:42 -- 03-12-2019 23:54 WIB (<strong>48H</strong>) |
+          26-11-2019 11:36 -- 03-12-2019 23:54 WIB (<strong>7D</strong>)
+      </small></p>
+      <p>
+        <a href="index.html" class="btn btn-outline-primary btn-sm">Home</a>
+        <a href="top3.html" class="btn btn-outline-primary btn-sm">Top 3</a>
+        <a href="https://github.com/eueung/fireloc" class="btn btn-outline-primary btn-sm">GitHub</a>
+        <a href="sumatera.html" class="btn btn-outline-primary btn-sm">Sumatera</a>
+        <a href="kalimantan.html" class="btn btn-outline-primary btn-sm">Kalimantan</a>
+        <a href="sulawesi.html" class="btn btn-outline-primary btn-sm">Sulawesi</a>
+        <a href="mp.html" class="btn btn-outline-primary btn-sm">Maluku &amp; Papua</a>
+        <a href="jawa.html" class="btn btn-outline-primary btn-sm">Jawa</a>
+        <a href="balint.html" class="btn btn-outline-primary btn-sm">Bali &amp; NT</a>
+      </p>
+    </div>
+  </section>
+
+    
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+
+<div class="col-md-12 text-center">
+  <img src="images/all_24h_04-12-19_04-42.png" class="img-fluid" alt="...">
+</div>
+
+<div class="col-md-6">   
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 24H</div>
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Kategori</th>
+          <th scope="col">#Titik</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Confidence High</th>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Nominal</th>
+          <td>420</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Low</th>
+          <td>56</td>
+        </tr>
+        <tr class="table-primary">
+          <th scope="row">Total</th>
+          <td>480</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence High or FRP&gt;10</th>
+          <td>80</td>
+        </tr>        
+    </tbody>
+    </table>
+  </div>
+</div>        
+</div>
+
+<div class="col-md-6">   
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 48H</div>
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Kategori</th>
+          <th scope="col">#Titik</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Confidence High</th>
+          <td>14</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Nominal</th>
+          <td>768</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence Low</th>
+          <td>64</td>
+        </tr>
+        <tr class="table-primary">
+          <th scope="row">Total</th>
+          <td>846</td>
+        </tr>
+        <tr>
+          <th scope="row">Confidence High or FRP&gt;10</th>
+          <td>129</td>
+        </tr>        
+    </tbody>
+    </table>
+  </div>
+</div>        
+</div>
+
+<div class="col-md-6">   
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 24H</div>
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">Total</th>
+          <th scope="col">H</th>
+          <th scope="col">N</th>
+          <th scope="col">L</th>
+          <th scope="col">HFRP10</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+              <th scope="row">1</th>
+              <td>Papua</td>
+              <td>148</td>
+              <td>0</td>
+              <td>103</td>
+              <td>45</td>
+              <td>39</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">2</th>
+              <td>Maluku</td>
+              <td>56</td>
+              <td>2</td>
+              <td>50</td>
+              <td>4</td>
+              <td>6</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">3</th>
+              <td>Kalimantan Tengah</td>
+              <td>45</td>
+              <td>0</td>
+              <td>45</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">4</th>
+              <td>Nusa Tenggara Barat</td>
+              <td>31</td>
+              <td>0</td>
+              <td>30</td>
+              <td>1</td>
+              <td>6</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">5</th>
+              <td>Jawa Timur</td>
+              <td>26</td>
+              <td>0</td>
+              <td>26</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">6</th>
+              <td>Sulawesi Tenggara</td>
+              <td>25</td>
+              <td>2</td>
+              <td>19</td>
+              <td>4</td>
+              <td>8</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">7</th>
+              <td>Nusa Tenggara Timur</td>
+              <td>23</td>
+              <td>0</td>
+              <td>22</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">8</th>
+              <td>Kalimantan Timur</td>
+              <td>22</td>
+              <td>0</td>
+              <td>22</td>
+              <td>0</td>
+              <td>6</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">9</th>
+              <td>Kalimantan Selatan</td>
+              <td>20</td>
+              <td>0</td>
+              <td>20</td>
+              <td>0</td>
+              <td>4</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">10</th>
+              <td>Sulawesi Selatan</td>
+              <td>18</td>
+              <td>0</td>
+              <td>18</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        
+    </tbody>
+    </table>
+  </div>
+</div>        
+</div>
+
+<div class="col-md-6">   
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 48H</div>
+  <div class="card-body">
+    <table class="table table-sm table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Provinsi</th>
+          <th scope="col">Total</th>
+          <th scope="col">H</th>
+          <th scope="col">N</th>
+          <th scope="col">L</th>
+          <th scope="col">HFRP10</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+              <th scope="row">1</th>
+              <td>Papua</td>
+              <td>209</td>
+              <td>8</td>
+              <td>152</td>
+              <td>49</td>
+              <td>52</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">2</th>
+              <td>Sumatera Selatan</td>
+              <td>91</td>
+              <td>1</td>
+              <td>90</td>
+              <td>0</td>
+              <td>24</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">3</th>
+              <td>Maluku</td>
+              <td>85</td>
+              <td>2</td>
+              <td>78</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">4</th>
+              <td>Kalimantan Tengah</td>
+              <td>64</td>
+              <td>0</td>
+              <td>64</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">5</th>
+              <td>Sulawesi Tenggara</td>
+              <td>60</td>
+              <td>2</td>
+              <td>54</td>
+              <td>4</td>
+              <td>10</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">6</th>
+              <td>Jawa Timur</td>
+              <td>43</td>
+              <td>0</td>
+              <td>42</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">7</th>
+              <td>Nusa Tenggara Timur</td>
+              <td>42</td>
+              <td>0</td>
+              <td>40</td>
+              <td>2</td>
+              <td>7</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">8</th>
+              <td>Nusa Tenggara Barat</td>
+              <td>38</td>
+              <td>0</td>
+              <td>37</td>
+              <td>1</td>
+              <td>8</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">9</th>
+              <td>Kalimantan Selatan</td>
+              <td>33</td>
+              <td>0</td>
+              <td>33</td>
+              <td>0</td>
+              <td>4</td>
+            </tr>
+            
+        <tr>
+              <th scope="row">10</th>
+              <td>Sulawesi Selatan</td>
+              <td>28</td>
+              <td>0</td>
+              <td>28</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            
+        
+    </tbody>
+    </table>
+  </div>
+</div>        
+</div>
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 24H</div>
+  <img src="images/all_prov_24h_04-12-19_04-42.svg" class="card-img-top" alt="...">
+</div>
+</div>        
+
+<div class="col-md-6">           
+<div class="card mb-4 shadow-sm">
+  <div class="card-header">Data 48H</div>
+  <img src="images/all_prov_48h_04-12-19_04-42.svg" class="card-img-top" alt="...">
+</div>
+</div>        
+
+              
+</div></div></div>
+
+</main>
+
+    
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>Sumber data yg digunakan berasal dari layanan <i>Fire Information for Resource Management System</i> (FIRMS) NASA khususnya <strong>VIIRS</strong> (Visible Infrared Imaging Radiometer Suite) dengan resolusi piksel 375 m. Sensor VIIRS terpasang pada satelit NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP).</p>
+    <p>Lebih lanjut tentang VIIRS dapat dilihat pada situs web <a href="https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/viirs-i-band-active-fire-data">FIRMS</a> NASA.</p>
+    <p><small><strong>2019</strong> | <strong>EM</strong> (eueung-at-stei.itb.ac.id)</small></p>  
+  </div>
+</footer>
+
+</body></html>
